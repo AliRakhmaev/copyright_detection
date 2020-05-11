@@ -29,11 +29,30 @@ Finally, you may run next command to run your server and then go to the localhos
 
 ## How to use
 
-This repository has three main options:
+This repository has three main options or actions which you can perform from the home page by pressing the certain buttons. By these options you will be able to manipulate with videos data and run the model to achieve the results in form of json file.
 
 ### Option 1: View all the videos and delete them
 Next page displays all teh videos which are already uploaded to the system and provide abilities to: see which videos are belonging to queries and database datasets respectively, link to this videos with ability to download them and mark the videos which you want to delete. Also, there are two buttons: one on the top to return to home page and at the very bottom to delete marked videos. After deleting the videos the content of the page will be updated.
 ### Option 2: Upload new videos
-This page consists of two main parts: one of them is radio button which marks for which category the uploading videos are belonging to - there two options: queries and database, second part is uploading button which calls your file manager and asks you to choose one or multiple videos to upload. After finishing the all the choosings press the bottom button to run the uploading program. Then, after pressing this button you will be redirected to home page.
+This page consists of two main parts: one of them is radio button which marks for which category the uploading videos are belonging to - there two options: queries and database, second part is uploading button which calls your file manager and asks you to choose one or multiple videos to upload. After finishing the all the choosings press the bottom button to run the uploading program. Then, after pressing this button you will be redirected to home page. Important: all the videos are indexed by their names and this is why all teh video names must be unique.
 ### Option 3: Perform computations and download the result
 This option runs the main deep learning model of the system, which takes all the uploaded videos and perform comparison of the queries videos to database ones. After it, the results of comparison will be written in JSON file. This file has the next structure: first dictionary is the name of the each query video to its comparison dictionary. Then, in teh second dictionaty we have correspondence between the name of the database file and its similarity to the given query video. Lastly, the system will redirect the user to the download page where the user will be given ability to download the resulting JSON.
+
+## Understanding the results
+The file is in JSON format and
+contains a dictionary with every query id as keys, and another dictionary that contains the similarities of the dataset
+videos to the corresponding queries as values. See the example below:
+```bash
+    {
+      "wrC_Uqk3juY": {
+        "KQh6RCW_nAo": 0.716,
+        "0q82oQa3upE": 0.300,
+          ...},
+      "k_NT43aJ_Jw": {
+        "-KuR8y1gjJQ": 1.0,
+        "Xb19O5Iur44": 0.417,
+          ...},
+      ....
+    }
+    ```
+```
