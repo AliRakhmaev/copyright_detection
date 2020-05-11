@@ -13,7 +13,7 @@ First of all you need to install docker and docker-compose on your system to be 
 Next, you have to run the next command to install the image of the project form docker hub to your computer:  
 ``` docker pull delamio/visil_recognizer_project:2.0 ```  
 After it, you run next command in directory there the downloaded docker-compose file is located:
-``` docker-compose up
+``` docker-compose up```  
 Finally, this project will be up-and-running and you will be able to start using it by going to localhost:8000 page and by this open the home page of teh project where you can start working. The home page consists of all needed instructions.
 
 ### 2) Clone this repo, install requirements and weights
