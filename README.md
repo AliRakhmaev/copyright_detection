@@ -14,7 +14,7 @@ Next, you have to run the next command to install the image of the project form 
 ``` docker pull delamio/visil_recognizer_project:2.0 ```  
 After it, you run next command in directory there the downloaded docker-compose file is located:
 ``` docker-compose up```  
-Finally, this project will be up-and-running and you will be able to start using it by going to localhost:8000 page and by this open the home page of teh project where you can start working. The home page consists of all needed instructions.
+Finally, this project will be up-and-running and you will be able to start using it by going to ```localhost:8000``` page and by this open the home page of teh project where you can start working. The home page consists of all needed instructions.
 
 ### 2) Clone this repo, install requirements and weights
 
@@ -24,7 +24,7 @@ After it, please load to the weights achive and unzip it in visil_model director
 wget http://ndd.iti.gr/visil/ckpt.zip
 unzip ckpt.zip
 ```
-Finally, you may run next command to run your server and then go to the localhost:8000 to access the home page of the application with all instructions on the main page.  
+Finally, you may run next command to run your server and then go to the ```localhost:8000``` to access the home page of the application with all instructions on the main page.  
 ```python.exe C:/Users/delamio/PycharmProjects/myapp/manage.py runserver 8000```
 
 ## How to use
