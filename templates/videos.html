@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Videos page</title>
+</head>
+<body>
+<form action="{% url 'index' %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Return to home page">
+</form>
+<br><br>
+
+<form action="{% url 'delete_videos' %}" method="post">
+    {% csrf_token %}
+    {{ param }}
+<input type="submit" value="Delete chosen videos">
+</form>
+
+</body>
+</html>
