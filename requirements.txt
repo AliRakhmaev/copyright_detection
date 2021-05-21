@@ -1,5 +1,5 @@
 django==3.0.3
-tensorflow==1.15
+tensorflow==2.5.0
 tensorboard==1.15
 numpy==1.18.4
 tqdm==4.46.0
